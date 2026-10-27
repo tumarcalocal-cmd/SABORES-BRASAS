@@ -1,0 +1,6 @@
+{
+  "name": "Restaurante Sabores & Brasas - Tu Marca Local",
+  "description": "Página web profesional y demostración comercial para restaurantes por Tu Marca Local. Ubicado en Santiago de Veraguas, Panamá.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

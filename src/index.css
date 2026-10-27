@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --color-carbon: #121212;
+  --color-wine: #7f1d1d;
+  --color-wine-dark: #450a0a;
+  --color-gold: #d97706;
+  --color-gold-light: #f59e0b;
+  --color-cream: #fdfbf7;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
