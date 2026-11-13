@@ -33,6 +33,9 @@ import {
   Eye,
   Check
 } from 'lucide-react';
+import pastaCremosaImg from './assets/images/pasta_cremosa_pollo_1794540237803.jpg';
+import chefParrillaImg from './assets/images/chef_parrilla_brasas_clean_1794540339967.jpg';
+import preparacionFuegoImg from './assets/images/preparacion_al_fuego_1794540407982.jpg';
 
 export default function App() {
   // Navigation & Modal States
@@ -116,10 +119,10 @@ export default function App() {
     if (!scrolledPastMenu) return;
 
     const customers = [
-      { name: 'María', city: 'Santiago', dish: 'Parrillada Especial' },
-      { name: 'Carlos', city: 'Veraguas', dish: 'Hamburguesa de la Casa' },
-      { name: 'Sofía', city: 'Atalaya', dish: 'Costillas BBQ' },
-      { name: 'Javier', city: 'Santiago', dish: 'Pasta Cremosa con Pollo' }
+      { name: 'María', city: 'Panamá', dish: 'Parrillada Especial' },
+      { name: 'Carlos', city: 'Panamá', dish: 'Hamburguesa de la Casa' },
+      { name: 'Sofía', city: 'Panamá', dish: 'Costillas BBQ' },
+      { name: 'Javier', city: 'Panamá', dish: 'Pasta Cremosa con Pollo' }
     ];
 
     const interval = setInterval(() => {
@@ -158,7 +161,7 @@ export default function App() {
       category: 'Pastas',
       name: 'Pasta Cremosa con Pollo',
       description: 'Pasta acompañada de pollo y una salsa cremosa de la casa.',
-      image: 'https://images.unsplash.com/photo-1621996346565-e3d5d628373b?auto=format&fit=crop&w=800&q=80',
+      image: pastaCremosaImg,
       badge: 'Cremoso'
     },
     {
@@ -213,14 +216,14 @@ export default function App() {
     { title: 'Parrillada Especial', category: 'Carnes', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80' },
     { title: 'Hamburguesa Artesanal', category: 'Hamburguesas', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80' },
     { title: 'Ambiente del Restaurante', category: 'Ambiente', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80' },
-    { title: 'Preparación al Fuego', category: 'Chef', image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80' },
+    { title: 'Preparación al Fuego', category: 'Chef', image: preparacionFuegoImg },
     { title: 'Postre de Chocolate', category: 'Postres', image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80' },
     { title: 'Bebidas Especiales', category: 'Bebidas', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80' },
   ];
 
   // FAQs
   const faqs = [
-    { q: '¿Dónde se encuentra el restaurante?', a: 'Nos encontramos ubicados de manera ilustrativa en Santiago de Veraguas, Panamá, en una zona de fácil acceso y con amplio estacionamiento.' },
+    { q: '¿Dónde se encuentra el restaurante?', a: 'Nos encontramos ubicados de manera ilustrativa en Panamá, en una zona de fácil acceso y con amplio estacionamiento.' },
     { q: '¿Cuáles son los horarios?', a: 'Atendemos de lunes a jueves de 11:00 a. m. a 9:00 p. m., viernes y sábados hasta las 10:00 p. m., y domingos de 12:00 p. m. a 8:00 p. m.' },
     { q: '¿Puedo consultar el menú desde mi celular?', a: '¡Así es! Nuestro menú digital está optimizado para cualquier dispositivo móvil para que puedas explorar cada plato y precio fácilmente.' },
     { q: '¿Cómo puedo comunicarme por WhatsApp?', a: 'Puedes hacer clic en cualquiera de nuestros botones de WhatsApp integrados para enviar consultas automáticas o comunicarte directamente con el equipo.' },
@@ -284,7 +287,7 @@ export default function App() {
                 SABORES & BRASAS
               </span>
               <span className="block text-[10px] text-stone-400 tracking-widest uppercase">
-                Santiago de Veraguas, Panamá
+                Panamá
               </span>
             </div>
           </a>
@@ -402,7 +405,7 @@ export default function App() {
         <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-950/80 border border-red-800 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide">
             <Flame className="w-4 h-4 text-amber-400" />
-            SANTIAGO DE VERAGUAS, PANAMÁ
+            PANAMÁ
           </div>
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-stone-100 uppercase leading-tight">
@@ -511,9 +514,9 @@ export default function App() {
               <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-amber-500 rounded-2xl blur-lg opacity-25" />
               <div className="relative rounded-2xl overflow-hidden border border-stone-800 shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80"
-                  alt="Chef preparando alimentos"
-                  className="w-full h-[450px] object-cover hover:scale-105 transition duration-700"
+                  src={chefParrillaImg}
+                  alt="Chef preparando cortes a la parrilla"
+                  className="w-full h-[450px] object-cover object-center hover:scale-105 transition duration-700"
                 />
               </div>
             </div>
@@ -546,7 +549,7 @@ export default function App() {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                    className={`w-full h-full object-cover ${item.id === 'pasta-cremosa' ? 'object-center' : ''} group-hover:scale-110 transition duration-500`}
                   />
                   <div className="absolute top-3 right-3 bg-stone-950/80 backdrop-blur text-amber-400 font-semibold text-xs px-3 py-1 rounded-full border border-stone-700">
                     {item.badge}
@@ -1032,7 +1035,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-stone-200 text-sm">Ubicación Ilustrativa</h4>
-                    <p className="text-stone-400 text-xs mt-0.5">Santiago de Veraguas, Panamá (Configurable para dirección real)</p>
+                    <p className="text-stone-400 text-xs mt-0.5">Panamá (Configurable para dirección real)</p>
                   </div>
                 </div>
 
@@ -1059,7 +1062,7 @@ export default function App() {
 
               <div>
                 <a
-                  href="https://maps.google.com/?q=Santiago+de+Veraguas+Panama"
+                  href="https://maps.google.com/?q=Panama+City+Panama"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold py-3.5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow"
@@ -1072,8 +1075,8 @@ export default function App() {
             {/* Right Column: Google Maps Embed */}
             <div className="bg-stone-900 border border-stone-800 rounded-3xl overflow-hidden h-[400px] lg:h-auto shadow-2xl">
               <iframe
-                title="Mapa Santiago de Veraguas"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.195328479532!2d80.9850!3d8.3516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fae70a75f8dbd07%3A0x6e2ef3d940e4e6d!2sSantiago%20de%20Veraguas%2C%20Panam%C3%A1!5e0!3m2!1ses!2sus!4v1650000000000!5m2!1ses!2sus"
+                title="Mapa Panamá"
+                src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sCiudad+de+Panam%C3%A1,+Panam%C3%A1!6i13!3m1!1ses!5m1!1ses"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '380px' }}
@@ -1105,7 +1108,7 @@ export default function App() {
             {[
               { name: 'Ana González', date: 'Hace 2 semanas', comment: 'Excelente atención y la parrillada estaba en su punto perfecto. El ambiente es sumamente agradable.' },
               { name: 'Ricardo Morales', date: 'Hace 1 mes', comment: 'Las hamburguesas artesanales tienen un sabor increíble. Definitivamente volveré con toda mi familia.' },
-              { name: 'Lucía Castillo', date: 'Hace 3 semanas', comment: 'Muy buena opción en Santiago de Veraguas. Los postres son deliciosos y el servicio impecable.' }
+              { name: 'Lucía Castillo', date: 'Hace 3 semanas', comment: 'Muy buena opción en Panamá. Los postres son deliciosos y el servicio impecable.' }
             ].map((review, idx) => (
               <div key={idx} className="bg-stone-950 border border-stone-800 p-6 rounded-2xl flex flex-col justify-between space-y-4 shadow-xl">
                 <div className="space-y-3">
@@ -1191,7 +1194,7 @@ export default function App() {
               <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-3 text-stone-300 text-sm">
                   <MapPin className="w-5 h-5 text-amber-400" />
-                  <span>Santiago de Veraguas, Panamá</span>
+                  <span>Panamá</span>
                 </div>
                 <div className="flex items-center gap-3 text-stone-300 text-sm">
                   <Phone className="w-5 h-5 text-amber-400" />
@@ -1315,7 +1318,7 @@ export default function App() {
                 SABORES & BRASAS
               </span>
               <p className="text-stone-400 text-xs leading-relaxed">
-                Cocina contemporánea, carnes a la parrilla y momentos inolvidables en Santiago de Veraguas, Panamá.
+                Cocina contemporánea, carnes a la parrilla y momentos inolvidables en Panamá.
               </p>
             </div>
 
